@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/job_alert_lin_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/squircle_bg"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/job_alert_company_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:padding="7dp"
+                    android:src="@drawable/company_logo" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/job_alert_lin_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Android Developer"
+            android:textColor="#DF000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto"
+            android:text="Srishti Innovative"
+            android:textColor="#5E5B5B"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/job_alert_date"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/job_alert_details_job_appli_start_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21-feb-2021"
+            android:textSize="6sp"
+            android:fontFamily="@font/roboto"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/home_view"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="#E6D1D1D1" />
+
+</RelativeLayout>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp"-->
+    <!--        android:background="@color/app_bg"-->
+    <!--        android:elevation="10dp"-->
+    <!--        app:cardCornerRadius="10dp">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="8dp">-->
+
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/jobIv"-->
+    <!--                android:layout_width="80dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:src="@drawable/itjobcell_icon"-->
+    <!--                android:scaleType="fitXY"/>-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/job_title"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Android developer"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                android:layout_toRightOf="@+id/jobIv"/>-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/company_name"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Company Name"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="12sp"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                android:layout_toRightOf="@+id/jobIv"-->
+    <!--                android:layout_alignBottom="@+id/jobIv"/>-->
+    <!--        </RelativeLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->

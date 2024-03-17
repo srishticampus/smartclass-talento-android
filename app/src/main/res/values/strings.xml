@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Talento</string>
+    <string name="login_button">LOGIN</string>
+    <!--    <string name="login_tv_1">Already \nhave an \nAccount?</string>-->
+    <string name="login_username">PhoneNumber</string>
+    <string name="login_password">Password</string>
+    <string name="splash_tv">Studies Made Simpler</string>
+    <string name="sample_tv_home_recycler">IT Jobcell</string>
+    <string name="sample_tv_package_recycler">Multiple Choice</string>
+    <string name="exam_duaration">Duration :</string>
+    <string name="exam_duration_min_tv">15</string>
+    <string name="exam_duration_min">Minutes</string>
+    <string name="number_of_questions">Number of questions :</string>
+    <string name="number_of_questions_count">15</string>
+    <string name="enter_verification_code">enter verification code</string>
+    <string name="Verify">Verify</string>
+    <string name="go_to_que">Go to Questions</string>
+    <string name="score">Score</string>
+    <string name="signout">Logout</string>
+    <string name="delete_account">Delete my account</string>
+    <string name="profile_name">User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contact_us_details">SRISHTI INNOVATIVE COMPUTER SYSTEMS (P) LTD. 2nd Floor, Mathews Arcade, Opp. Chaithanya Eye Hospital, Kesavadasapuram, Thiruvananthapuram-4.</string>
+    <string name="find_your_job">Find Your Job</string>
+    <string-array name="course_type">
+        <item>COURSE</item>
+        <item>INTERNSHIP</item>
+        <item>EVENT</item>
+    </string-array>
+    <string name="terms_heading">Read the Instructions Carefully</string>
+    <string name="exam_terms">
+        •The Entrance Examination will be objective type with Multiple Choice Questions and based on single response.
+
+        •For each question, four suggested answers would be given, of which only one will be the MOST APPROPRIATE RESPONSE.
+
+        •The candidate will have to select and mark the option corresponding to the most appropriate response
+
+        •This Exam will have 75 questions to be answered in 75 minutes
+
+        •For each correct response in the Entrance Examination, the candidates will be awarded FOUR marks, and for each incorrect response, ONE mark will be deducted from the total score
+        All the best!!!!</string>
+</resources>

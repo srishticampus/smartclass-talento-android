@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/placed_candidate_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/deafult_placement_image"
+                android:foreground="@drawable/gradient_forground_iv"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/placement_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="John Jale"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Placed Via"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/placement_placed_via_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto"
+                        android:text="Campus Placement"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Company"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/placement_company_tv"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Lorem ipsam"
+                        android:gravity="right"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Position"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/placement_position_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"
+                        android:text="Android developer"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Placed On"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:id="@+id/placement_placed_dt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"
+                        android:text="02-09-2021"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/exam_set_card"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="15dp"-->
+    <!--        app:cardCornerRadius="20dp">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="8dp">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/placed_candidate_iv">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/placement_name_tv"-->
+    <!--                    style="@style/TextAppearance.AppCompat.Medium"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginLeft="18dp"-->
+    <!--                    android:layout_marginTop="16dp"-->
+    <!--                    android:text="SreeVidhya"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:layout_centerHorizontal="true"/>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:id="@+id/que_set_linear_1"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/placement_name_tv"-->
+    <!--                    android:layout_marginTop="8dp"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:layout_centerHorizontal="true">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/exam_details_duration_tv"-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="16dp"-->
+    <!--                        android:drawablePadding="10dp"-->
+    <!--                        android:drawableTint="@color/black"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Placed via : "-->
+    <!--                        android:textColor="@color/black" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/placement_placed_via_tv"-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="5dp"-->
+    <!--                        android:layout_toRightOf="@id/exam_details_duration_tv"-->
+    <!--                        android:text="Campus Recruitment"-->
+    <!--                        android:textColor="@color/black" />-->
+    <!--                </LinearLayout>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:id="@+id/que_set_linear_2"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/que_set_linear_1"-->
+    <!--                    android:layout_marginTop="8dp"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:layout_centerHorizontal="true">-->
+
+    <!--                    <TextView-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="16dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Company :"-->
+    <!--                        android:textColor="@color/black" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/placement_company_tv"-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="5dp"-->
+    <!--                        android:layout_toRightOf="@id/exam_details_duration_tv"-->
+    <!--                        android:text="ARS Traffic"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:layout_marginRight="8dp"/>-->
+    <!--                </LinearLayout>-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:id="@+id/que_set_linear_3"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/que_set_linear_2"-->
+    <!--                    android:layout_marginTop="8dp"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:layout_centerHorizontal="true">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/last_score_tv"-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="16dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Position : "-->
+    <!--                        android:textColor="@color/black" />-->
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/placement_position_tv"-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="5dp"-->
+    <!--                        android:layout_toRightOf="@id/exam_details_duration_tv"-->
+    <!--                        android:text="Software Tester"-->
+    <!--                        android:textColor="@color/black" />-->
+    <!--                </LinearLayout>-->
+    <!--                <LinearLayout-->
+    <!--                    android:id="@+id/que_set_linear_4"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_below="@+id/que_set_linear_3"-->
+    <!--                    android:layout_marginTop="8dp"-->
+    <!--                    android:layout_marginBottom="16dp"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:layout_centerHorizontal="true">-->
+
+    <!--                    <TextView-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="16dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Placed on : "-->
+    <!--                        android:textColor="@color/black" />-->
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/placement_placed_dt"-->
+    <!--                        style="@style/TextAppearance.AppCompat.Small"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginLeft="5dp"-->
+    <!--                        android:layout_toRightOf="@id/exam_details_duration_tv"-->
+    <!--                        android:text="2021-09-20"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:textColor="@color/black" />-->
+    <!--                </LinearLayout>-->
+    <!--            </RelativeLayout>-->
+
+    <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--                android:id="@+id/placed_candidate_iv"-->
+    <!--                android:layout_width="100dp"-->
+    <!--                android:layout_height="100dp"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_centerHorizontal="true"-->
+    <!--                android:src="@drawable/question_set_iv"/>-->
+    <!--        </RelativeLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->

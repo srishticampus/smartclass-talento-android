@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_with_srishti_logo"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/alfa_slab_one"
+            tools:text="SmartClass"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/home_menu"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_settings"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/choose_examiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Choose\nYour\nExaminer"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+<!--        android:shadowColor="#000000"-->
+<!--        android:shadowDx="2"-->
+<!--        android:shadowDy="2"-->
+<!--        android:shadowRadius="1.6"-->
+
+
+
+<!--        <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--            android:id="@+id/shimmer_layout_home"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;add  several shimmer placeholder layout &ndash;&gt;-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--                <include layout="@layout/home_shimmer_ph_layout"></include>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/home_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_examiner"
+            app:shimmer_recycler_layout="@layout/home_shimmer_recycler"
+            android:layout_marginTop="32dp"
+            app:shimmer_recycler_item_count="4"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:orientation="vertical"
+            app:spanCount="2" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

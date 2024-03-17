@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_cardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#00FFFFFF"
+        >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/course_iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:elevation="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/courses_image"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/course_tv"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:text="@string/sample_tv_package_recycler"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_activity_layout"
+    android:background="@drawable/splash_screen_bg">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_screen_logo" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textStyle="bold"
+        tools:text="Srishti Innovative" />
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/login_card_bg">
+
+            <TextView
+                android:id="@+id/user_reg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="New User? Reg Now"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/login_dot_one"
+                android:layout_marginLeft="16dp"
+                android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/login_dot_one"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_white_dot"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/login_white_line"
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/login_dot_one"
+                android:background="@drawable/login_white_line"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/login_dot_two"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@+id/login_white_line"
+                android:background="@drawable/login_white_dot"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/layout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/login_edtxt_bg"
+                android:gravity="center"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/verify_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/login_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:id="@+id/login_bt_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="LOGIN"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/login_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/login_screen_arrow"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/squircle_white_fill_bg"
+            android:padding="16dp"
+            android:src="@drawable/splash_screen_logo" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

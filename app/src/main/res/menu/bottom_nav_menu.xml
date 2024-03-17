@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_bt_nav_icon"
+        android:icon="@drawable/btm_nav_home_selection"
+        android:title="" />
+    <item
+        android:id="@+id/profile_bt_nav_icon"
+        android:icon="@drawable/btm_nav_profile_selection"
+        android:title="" />
+    <item
+        android:id="@+id/job_alert_bt_nav_icon"
+        android:icon="@drawable/btm_nav_testimonials_selection"
+        android:title="" />
+    <item
+        android:id="@+id/testimonials_bt_nav_icon"
+        android:icon="@drawable/btm_nav_testimonials_selection"
+        android:title=""
+        android:visible="false"/>
+    <item
+        android:id="@+id/search_bt_nav_icon"
+        android:icon="@drawable/btm_nav_search_selection"
+        android:title=""
+        android:visible="false"/>
+</menu>

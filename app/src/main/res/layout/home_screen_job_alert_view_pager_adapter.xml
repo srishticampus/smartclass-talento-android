@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/home_screen_view_pager_bg">
+
+    <TextView
+        android:id="@+id/view_pager_txt1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/view_pager_text_bg"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="View More"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/view_pager_iv"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/view_pager_txt1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/view_pager_company_logo" />
+
+    <TextView
+        android:id="@+id/view_pager_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view_pager_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/view_pager_iv"
+        android:fontFamily="@font/roboto"
+        android:text="Full stack developer"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/view_pager_txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_pager_txt2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/view_pager_iv"
+        android:fontFamily="@font/roboto"
+        android:text="Company Name"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+    <LinearLayout
+        android:id="@+id/view_pager_ln1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view_pager_txt3"
+        android:layout_toRightOf="@+id/view_pager_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/job_alert_date_icon"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/view_pager_txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="21 feb 2021"
+            android:textSize="8sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/view_pager_ln2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view_pager_txt3"
+        android:layout_toRightOf="@+id/view_pager_ln1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/job_alert_time_icon"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="12:00 PM"
+            android:textSize="8sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_pager_txt_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_pager_iv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Qualification"
+        android:textSize="8sp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="27dp"/>
+</RelativeLayout>

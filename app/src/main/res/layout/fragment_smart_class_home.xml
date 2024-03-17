@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartClassHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/hamburger_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/home_hamburger" />
+
+            <ImageView
+                android:id="@+id/home_srishti_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/hamburger_icon"
+                android:src="@drawable/toolbar_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/home_srishti_logo"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talento"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/notification_icon_home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/notification_icon"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvCartCountNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/layout_red_rounded_bg"
+                    android:gravity="center"
+                    android:text="0"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="7sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/home_view"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/darker_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/home_placement_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Placements"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <com.todkars.shimmer.ShimmerRecyclerView
+                        android:id="@+id/home_placement_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_placement_txt"
+                        android:layout_marginLeft="11dp"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:shimmer_recycler_layout="@layout/home_placement_shimmer_layout"
+                        app:shimmer_recycler_repeat_mode="reverse" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/home_choose_examiner_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Choose Your Examiner"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/home_choose_examiner_txt"
+                        android:background="@color/darker_grey" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/home_it_jobcell_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/itjobcell_card_bg">
+
+                                        <ImageView
+                                            android:id="@+id/home_itjobcell_card_iv"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="16dp"
+                                            android:src="@drawable/home_card_it_job_cell_iv" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignTop="@+id/home_itjobcell_card_iv"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_toRightOf="@+id/home_itjobcell_card_iv"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="IT JOBCELL"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginRight="12dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:src="@drawable/home_card_it_job_arrow" />
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_marginBottom="4dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/home_company_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/company_card_bg">
+
+                                        <ImageView
+                                            android:id="@+id/home_company_card_iv"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="16dp"
+                                            android:src="@drawable/home_company_icon" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignTop="@+id/home_company_card_iv"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_toRightOf="@+id/home_company_card_iv"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="COMPANY"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginRight="12dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:src="@drawable/home_company_arrow" />
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="16dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/home_college_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/college_card_bg">
+
+                                        <ImageView
+                                            android:id="@+id/home_college_card_iv"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="16dp"
+                                            android:src="@drawable/home_college" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignTop="@+id/home_college_card_iv"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_toRightOf="@+id/home_college_card_iv"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="COLLEGE"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginRight="12dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:src="@drawable/home_college_arrow" />
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/home_campus_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/campus_card_bg">
+
+                                        <ImageView
+                                            android:id="@+id/home_campus_card_iv"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="16dp"
+                                            android:src="@drawable/home_campus_icon" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignTop="@+id/home_campus_card_iv"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_toRightOf="@+id/home_campus_card_iv"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="CAMPUS"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginRight="12dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:src="@drawable/home_campus_arrow" />
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".45"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/job_alert_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Job Alert"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/job_alert_txt"
+                        android:background="@color/darker_grey" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/home_view_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/home_view_pager_loading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/home_screen_view_pager_bg">
+
+                            <ProgressBar
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_centerInParent="true"
+                                android:indeterminateTint="@color/white" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pager_dots"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <!--                        <com.google.android.material.tabs.TabLayout-->
+                        <!--                            android:id="@+id/home_view_pager_tab_layout"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_centerHorizontal="true"-->
+                        <!--                            android:layout_height="8dp"-->
+                        <!--                            android:layout_alignParentBottom="true"-->
+                        <!--                            android:layout_marginBottom="16dp"-->
+                        <!--                            app:tabBackground="@drawable/tab_layout_tab_selector"-->
+                        <!--                            app:tabGravity="center"-->
+                        <!--                            app:tabIndicatorHeight="0dp" />-->
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

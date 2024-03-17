@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_bg"
+    android:id="@+id/verify_phone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/login_card_bg"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="Verify Mobile"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/login_edtxt_bg"
+                android:gravity="center"
+                android:hint="Enter Verification Code"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/login_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/buttonSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="VERIFY"
+                    android:textColor="@color/white"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/verify_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/login_iv"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/login_screen_arrow" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/squircle_white_fill_bg"
+            android:padding="16dp"
+            android:src="@drawable/splash_screen_logo" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/app_bg"-->
+<!--    android:orientation="vertical"-->
+<!--    android:weightSum="2"-->
+<!--    android:id="@+id/verify_phone">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:gravity="center|bottom"-->
+<!--        android:layout_weight="1">-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_verify"-->
+<!--            android:paddingBottom="40dp"/>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_weight="1">-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:paddingLeft="40dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Verify mobile"-->
+<!--            android:paddingBottom="15dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#444444"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/editTextCode"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:digits="0123456789"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="@string/enter_verification_code"-->
+<!--            android:inputType="phone"-->
+<!--            android:maxLength="6"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_marginRight="40dp"/>-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/verify_progressbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:indeterminate="true"-->
+<!--                android:indeterminateDrawable="@drawable/progress_bg"-->
+<!--                android:progress="0" />-->
+<!--            <Button-->
+<!--                android:id="@+id/buttonSignIn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/Verify"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:layout_margin="40dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:background="@drawable/button_background_blue"-->
+<!--                android:visibility="gone"/>-->
+
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->

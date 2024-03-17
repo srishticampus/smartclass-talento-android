@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobAlertActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/app_background_with_srishti_logo">
+    <com.todkars.shimmer.ShimmerRecyclerView
+        android:id="@+id/job_alert_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_recycler_layout="@layout/job_alert_shimmer_recycler_layout"
+        />
+
+</LinearLayout>
+
+<!--    android:background="#EDEDED"-->

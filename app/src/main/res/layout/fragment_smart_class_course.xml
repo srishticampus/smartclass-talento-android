@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartClassCourseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:background="@drawable/course_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Exam"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/course_fragment_back_button"
+                    android:layout_width="15dp"
+                    android:layout_height="11dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/back"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/back_btn_view_course"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tech"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/course_white_bg"
+        android:elevation="5dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="24dp">
+
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/course_recycler_view_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:shimmer_recycler_layout="@layout/course_shimmer_layout_smartclass"
+            app:spanCount="3"
+            tools:itemCount="16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gate_pass_rl_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_tech"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="-77dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/course_white_bg"
+        android:elevation="5dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/gate_pass_anim" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Click Here For Gate Pass"
+            android:textColor="@color/srishti_bg"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/gate_pass_anim" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
